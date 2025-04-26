@@ -4,6 +4,7 @@ import { shoes, statistics } from "../constants";
 import { bigShoe1 } from "../assets/images";
 import Button from "../Components/Button";
 import ShoeCard from "../Components/ShoeCard";
+import { arrowRight } from "../assets/icons";
 
 const Hero = () => {
   const [bigShoeImg, setBigShoeImg] = useState(bigShoe1);
@@ -30,7 +31,7 @@ const Hero = () => {
           your active life.
         </p>
 
-        <Button />
+        <Button label="Shop Now" iconURL={arrowRight} />
 
         <div className='flex justify-start items-start flex-wrap w-full mt-2 gap-16'>
           {statistics.map((stat, index) => (
